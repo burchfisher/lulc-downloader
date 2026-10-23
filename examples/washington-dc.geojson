@@ -1,0 +1,8 @@
+{
+  "type": "Feature",
+  "properties": {"name": "Small Washington DC example"},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[-77.05, 38.88], [-77.00, 38.88], [-77.00, 38.92], [-77.05, 38.92], [-77.05, 38.88]]]
+  }
+}

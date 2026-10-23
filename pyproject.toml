@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lulc-download"
+version = "0.1.0"
+description = "Region and date based land-cover downloads with a local interface"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3", "rasterio>=1.4,<2", "shapely>=2,<3",
+  "pyproj>=3.6,<4", "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+earthengine = ["earthengine-api>=1.5,<2"]
+ui = ["streamlit>=1.40,<2", "folium>=0.18,<1", "streamlit-folium>=0.24,<1"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+lulc = "lulc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lulc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
