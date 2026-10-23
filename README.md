@@ -6,6 +6,10 @@ The interface opens in your browser, with Python running locally and output file
 
 NLCD, WorldCover, and USDA Cropland Data Layer download without accounts or Google setup. Dynamic World uses Earth Engine and requires its optional package, authentication, and a registered project.
 
+![Local land-cover downloader showing dataset and date controls, a region map, and estimated output size](docs/images/dashboard.jpg)
+
+Local interface with the Washington, D.C. example region and a download preview.
+
 ## Download and install
 
 Install **Python 3.11 or newer**. On the GitHub repository page, choose **Code → Download ZIP**, extract the ZIP, and open a terminal in the extracted project folder containing `pyproject.toml`. Alternatively, clone the repository and open its folder.
